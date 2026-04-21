@@ -1,4 +1,5 @@
 baseURL = "https://updss.org/"
+relativeURLs = true
 languageCode = "en-us"
 title = "UPDSS — Universal Product Development Support System"
 theme = "PaperMod"

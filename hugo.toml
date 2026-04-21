@@ -1,0 +1,75 @@
+baseURL = "https://updss.org/"
+languageCode = "en-us"
+title = "UPDSS — Universal Product Development Support System"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  env = "production"
+  description = "Governance-as-code for AI-agent-driven software development. Open source."
+  author = "Nitin Dhawan (Muralidhar)"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+
+  [params.homeInfoParams]
+    Title = "UPDSS"
+    Content = """
+A governance-as-code platform for AI-agent-driven software development.\n
+AI agents are capable enough to write production code, but not trustworthy enough to ship it without governance. UPDSS is the governance layer.\n
+[Read the architecture article →](/posts/governance-as-code/) · [Support this work →](/support/)
+"""
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/updss-project"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/nitindhawan"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+[params.assets]
+  favicon = "/favicon.ico"
+
+[params.cover]
+  hiddenInList = false
+  hiddenInSingle = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[[menu.main]]
+  name = "Articles"
+  url = "/posts/"
+  weight = 1
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 2
+[[menu.main]]
+  name = "Methodology"
+  url = "/methodology/"
+  weight = 3
+[[menu.main]]
+  name = "Support"
+  url = "/support/"
+  weight = 4
+[[menu.main]]
+  name = "Author"
+  url = "/author/"
+  weight = 5

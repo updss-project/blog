@@ -3,10 +3,26 @@
 <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
+    var isDark = document.querySelector('html').dataset.theme === 'dark' ||
+      (document.querySelector('html').dataset.theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+
     mermaid.initialize({
       startOnLoad: true,
-      theme: 'default',
-      securityLevel: 'loose'
+      theme: isDark ? 'dark' : 'default',
+      securityLevel: 'loose',
+      themeVariables: isDark ? {
+        lineColor: '#0ea5e9',
+        primaryColor: '#1e3a5f',
+        primaryTextColor: '#e2e8f0',
+        primaryBorderColor: '#0ea5e9',
+        secondaryColor: '#1e293b',
+        tertiaryColor: '#0f172a',
+        edgeLabelBackground: '#1e293b',
+        clusterBkg: '#0f172a',
+        clusterBorder: '#0ea5e9',
+        titleColor: '#e2e8f0',
+        nodeTextColor: '#e2e8f0'
+      } : {}
     });
     // Convert ```mermaid code blocks to mermaid-rendered divs
     document.querySelectorAll('pre > code.language-mermaid').forEach(function(el) {

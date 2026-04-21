@@ -7,7 +7,7 @@ paginate = 10
 
 [params]
   env = "production"
-  description = "Governance-as-code for AI-agent-driven software development. Open source."
+  description = "UPDSS: Governed Intelligence. Governance-as-code for AI-agent-driven software development."
   author = "Nitin Dhawan (Muralidhar)"
   defaultTheme = "auto"
   ShowReadingTime = true
@@ -19,7 +19,7 @@ paginate = 10
   TocOpen = false
 
   [params.homeInfoParams]
-    Title = "UPDSS"
+    Title = "UPDSS: Governed Intelligence"
     Content = """
 A governance-as-code platform for AI-agent-driven software development.\n
 AI agents can write production code. They can't be trusted to ship it without governance. UPDSS is the governance layer.\n

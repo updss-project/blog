@@ -3,31 +3,49 @@ title: "About UPDSS"
 layout: "single"
 url: "/about/"
 summary: "What UPDSS is, why it exists, and what it means for AI-era software development."
+ShowToc: false
+cover:
+  image: "/images/about-updss.jpg"
 ---
 
-## Universal Product Development Support System
+## The Problem Nobody Talks About
 
-UPDSS is a governance-as-code platform for AI-agent-driven software development. A universal methodology for building software at population scale, in an era when AI does the building and governance decides whether it holds.
+AI agents can write production code. Good code, often. Fast code, always. But here's what the demos don't show you: what happens after the code is written.
 
-It is NOT a project management tool, NOT a CI/CD pipeline, and NOT an AI coding assistant. It is the control plane that ensures AI agents write code with traceability, quality gates, and human oversight.
+Who reviewed it? Was it scoped properly? Did the agent stay within bounds, or did it quietly rewrite a module nobody asked it to touch? Was there a budget, and did anyone track whether the agent blew past it? When three agents work on the same product simultaneously, who makes sure they aren't stepping on each other's commits?
 
-### The core insight
+These aren't hypothetical questions. They're the ones I hit every day running nine AI agents across six products from a terminal multiplexer.
 
-AI agents are capable enough to write production code, but not trustworthy enough to ship it without governance. UPDSS is the governance layer.
+## What UPDSS Actually Is
 
-### The recursive property
+UPDSS (Universal Product Development Support System) is governance-as-code for AI-agent-driven software development. Think of it as the control plane that sits between your AI agents and your production environment.
 
-UPDSS governs its own development. Every feature goes through G1/G2/G3 gates. Every commit has a story ID. Every release has a scope, budget, and retrospective. This self-hosting means every bug in UPDSS governance is experienced firsthand by the agents building UPDSS, creating a tight feedback loop that no external testing could replicate.
+It isn't a project management tool. It isn't a CI/CD pipeline. It isn't another AI coding assistant. It's the layer that ensures every line of agent-written code has traceability, passes through quality gates, and gets human approval before it ships.
 
-### The numbers
+The methodology combines Stage-Gate reviews (three gates, each requiring a human decision), Kanban flow (stories pulled when capacity exists, no sprints), and Shape Up appetite management (fixed budget, variable scope). Every story has a dollar cost. Every release has a budget. Every agent reports what it actually spent.
 
-- 50+ releases in 6 weeks
-- ~$500 total AI cost
-- 6 products governed through a single platform
-- One human directing 9 AI agents through a terminal multiplexer
+## Why It Works: The Recursive Property
 
-### Open source
+Here's the part that matters most. UPDSS governs its own development.
+
+The dashboard, the enforcement scripts, the gate tools, the pre-commit hooks: all built by AI agents operating under UPDSS governance. Every feature went through G1/G2/G3 gates. Every commit carries a story ID. Every release has a scope, a budget, and a retrospective.
+
+This creates something you can't get any other way. When there's a bug in the governance layer, the agents building the governance hit it first. They report it, the fix ships in the next release, and the governance tightens. The vyavastha (the system's own structure) corrects itself through use.
+
+## The Numbers
+
+These are real, drawn from eight continuous weeks of operation:
+
+- **50+ releases** shipped, from v0.1 through v0.11.9
+- **~$500 total AI cost** across all agent sessions, all products
+- **6 products** governed through a single platform (UPDSS itself, Omysha SignIn, Omysha SSP, Algo PropTrading, Marketing Tools, Process Modelling)
+- **9 AI agents** directed by one human through a tmux terminal
+- **Zero hard-rule violations.** No agent approved a gate, deployed without confirmation, or committed code outside story scope.
+
+v0.11.8 budgeted $30. Spent $29.50. That kind of cost accuracy comes from mechanical enforcement, not good intentions.
+
+## Open Source
 
 UPDSS is being open-sourced. The methodology, the enforcement engine, and the governance architecture are available at [github.com/updss-project](https://github.com/updss-project).
 
-If you want to support this work, visit the [Support page](/support/).
+If this resonates with problems you're facing, [read how the architecture works](/how-it-works/) or [support the project](/support/).

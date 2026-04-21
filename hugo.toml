@@ -22,8 +22,9 @@ paginate = 10
     Title = "UPDSS"
     Content = """
 A governance-as-code platform for AI-agent-driven software development.\n
-AI agents are capable enough to write production code, but not trustworthy enough to ship it without governance. UPDSS is the governance layer.\n
-[Read the architecture article →](/posts/governance-as-code/) · [Support this work →](/support/)
+AI agents can write production code. They can't be trusted to ship it without governance. UPDSS is the governance layer.\n
+50+ releases. 6 products. ~$500 total AI cost. One human, nine agents.\n
+[Read how it works](/how-it-works/) · [Read the architecture article](/posts/governance-as-code/) · [Support this work](/support/)
 """
 
   [[params.socialIcons]]
@@ -63,14 +64,30 @@ AI agents are capable enough to write production code, but not trustworthy enoug
   url = "/about/"
   weight = 2
 [[menu.main]]
+  name = "How It Works"
+  url = "/how-it-works/"
+  weight = 3
+[[menu.main]]
+  name = "For Product Leaders"
+  url = "/for-product-leaders/"
+  weight = 4
+[[menu.main]]
+  name = "For AI Agents"
+  url = "/for-agents/"
+  weight = 5
+[[menu.main]]
+  name = "For Developers"
+  url = "/for-developers/"
+  weight = 6
+[[menu.main]]
   name = "Methodology"
   url = "/methodology/"
-  weight = 3
+  weight = 7
 [[menu.main]]
   name = "Support"
   url = "/support/"
-  weight = 4
+  weight = 8
 [[menu.main]]
   name = "Author"
   url = "/author/"
-  weight = 5
+  weight = 9

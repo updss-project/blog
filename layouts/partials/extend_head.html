@@ -1,5 +1,40 @@
 <!-- Mermaid diagram support -->
 {{ if .Params.mermaid }}
+<style>
+  /* Force bright visible arrows and edges in Mermaid diagrams */
+  .mermaid .edgePath .path {
+    stroke: #0ea5e9 !important;
+    stroke-width: 2px !important;
+    stroke-dasharray: none !important;
+  }
+  .mermaid .edgePath marker path {
+    fill: #0ea5e9 !important;
+  }
+  .mermaid marker path {
+    fill: #0ea5e9 !important;
+  }
+  .mermaid .edgeLabel {
+    background-color: #1e293b !important;
+    color: #e2e8f0 !important;
+    padding: 2px 6px !important;
+    border-radius: 3px !important;
+  }
+  .mermaid .cluster rect {
+    stroke: #0ea5e9 !important;
+    stroke-width: 1.5px !important;
+  }
+  .mermaid .flowchart-link {
+    stroke: #0ea5e9 !important;
+    stroke-width: 2px !important;
+  }
+  /* Arrowheads */
+  .mermaid #arrowhead path,
+  .mermaid [id*="arrowhead"] path,
+  .mermaid marker[id*="arrow"] path {
+    fill: #0ea5e9 !important;
+    stroke: #0ea5e9 !important;
+  }
+</style>
 <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {

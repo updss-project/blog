@@ -1,7 +1,7 @@
 baseURL = "https://updss.org/"
 relativeURLs = true
 languageCode = "en-us"
-title = "UPDSS — Universal Product Development Support System"
+title = "UPDSS | Governed Intelligence"
 theme = "PaperMod"
 paginate = 10
 

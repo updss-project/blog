@@ -56,6 +56,10 @@ AI agents can write production code. They can't be trusted to ship it without go
       unsafe = true
 
 [[menu.main]]
+  name = "Start Here"
+  url = "/start-here/"
+  weight = 0
+[[menu.main]]
   name = "Articles"
   url = "/posts/"
   weight = 1
